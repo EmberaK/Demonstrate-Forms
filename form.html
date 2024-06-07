@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Registration</h2>
+<form action="https://fom.in.ua/echo">
+    <div>
+        <label for="email_forms1">E-mail</label>
+        <input type="text" id="email_forms1" name="email" placeholder="Enter your email" required>
+    </div>
+    <hr>
+    <div>
+        <label for="password_forms1">Password</label>
+        <input type="password" id="password_forms1" name="password" placeholder="Enter your password" required>
+    </div>
+    <hr>
+    <div>
+        <label for="years_forms1">Enter your years</label>
+        <input type="number" id="years_forms1" name="youryears" min="18" max="60" placeholder="Enter your years">
+    </div>
+    <hr>
+    <div>
+        <label>
+            <input type="checkbox" id="remember_forms1" name="rememberme" value="yes">
+            Remember me
+        </label>
+    </div>
+    <hr>
+    <button type="submit">Send</button>
+</form>
+<h2>Ad submission form</h2>
+<form action="https://fom.in.ua/echo">
+    <div>
+        <label for="title_forms2">Enter ad title</label>
+        <input type="text" id="title_forms2" name="enteradtitle" placeholder="Enter ad title" required>
+    </div>
+    <hr>
+    <div>
+        <p>Type of gearbox in the car</p>
+        <label>
+            <input type="radio" id="manual_forms2" name="type" value="manual" required>
+            Manual
+        </label>
+        <label>
+            <input type="radio" id="mecanic_forms2" name="type" value="mecanic" required>
+            Mecanic
+        </label>
+    </div>
+    <hr>
+    <div>
+        <label for="mileage_forms2">Car mileage</label>
+        <input type="text" id="mileage_forms2" name="car_mileage" pattern="[0-9]+km" required>
+    </div>
+    <hr>
+    <div>
+        <input type="checkbox" id="damaged" name="condition" value="Damaged">
+        <label for="damaged">Damaged</label><br>
+        <input type="checkbox" id="on_credit" name="condition" value="On credit">
+        <label for="on_credit">On credit</label><br>
+        <input type="checkbox" id="zero_mileage" name="condition" value="Zero mileage">
+        <label for="zero_mileage">Zero mileage</label><br>
+    </div>
+    <hr>
+    <div>
+        <label for="year">Year's machine:</label><br>
+        <input type="date" id="year" name="years" placeholder="YYYY-MM-DD" required><br>
+    </div>
+    <hr>
+    <div>
+        <label for="color">Color:</label><br>
+        <input type="color" id="color" name="color" required><br>
+    </div>
+    <hr>
+    <div>
+        <label for="fuel_type">Fuel Type:</label><br>
+        <select id="fuel_type" name="fuel_type" required>
+            <option value="Gas">Gas</option>
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Diesel</option>
+        </select><br>
+    </div>
+    <hr>
+    <div>
+        <label for="comment">Comments:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="40"></textarea><br>
+    </div>
+    <button type="submit">Send</button>
+</form>
+</body>
+</html>
